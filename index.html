@@ -4,7 +4,7 @@
  <title>r0b0h0b0</title>
  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
 <!-- The only know website with the glorious Peter De jong attractor -->
- <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
  <meta name="description" content="">
  <style type="text/css"><!--
   @font-face {
@@ -26,7 +26,7 @@
             border:1px solid #F00; margin:-17px; padding:16px;
             position:relative; z-index:1; }
  .c { height:2520pt; overflow:hidden; cursor:default; }
-  @media screen and (max-device-width: 480px) {
+  @media screen and (max-width: 480px) {
    body { width: auto; margin: auto; }
    pre { overflow-x: auto; -webkit-overflow-scrolling: touch; }
   }
@@ -170,6 +170,7 @@ iframe {
 }
  -->
  </style>
+ <div id="index-container">
   <div id="visualizer-container"><canvas id="canvas"></canvas></div>
 <script type="text/javascript" async="" src="./r0b0_files/js"></script></head>
 <body bgcolor="#000000" text="#00FF41" link="#FF0000" vlink="#44FF44" alink="#FFFFFF">
@@ -309,6 +310,30 @@ function renderFrame() {
     x += barWidth + 1;
   }
 }
+  // JavaScript to conditionally show/hide elements based on screen width
+  window.addEventListener('DOMContentLoaded', function () {
+    var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+    // Function to toggle visibility based on screen width
+    function toggleVisibility() {
+      var r0b0Container = document.getElementById('r0b0-container');
+      var indexContainer = document.getElementById('index-container');
+
+      if (screenWidth < 1024) { // Adjust the threshold as needed
+        r0b0Container.style.display = 'block';
+        indexContainer.style.display = 'none';
+      } else {
+        r0b0Container.style.display = 'block';
+        indexContainer.style.display = 'block';
+      }
+    }
+
+    // Initial toggle on page load
+    toggleVisibility();
+
+    // Toggle visibility on window resize
+    window.addEventListener('resize', toggleVisibility);
+  });
 </script>
 .386
 .model flat, stdcall
@@ -1075,9 +1100,10 @@ end_of_code:
 
 end start
 ^C
-</pre></div>
+</pre></div></div>
 <script type="text/javascript"><!--
  setTimeout(function(){},0);var p=0,q=-12;function a(){if(window.setTimeout&&document.getElementsByTagName){var o=12*(2<<6);var b=document.getElementsByTagName("pre")[0];b.style.top=(p-o)+"pt";var l=document.getElementsByTagName("b");var o=-(p-o)+"pt";for(var a in l){if(l[a].style)l[a].style.top=o;}p+=q;if(p<-2<<9||p>=0)q=-q;window.setTimeout(this.a,2<<6);}}a();//--></script>
-
+<div id="r0b0-container" style="display: none;">
 <iframe src="r0b0.html" frameborder="0" class="background-iframe"></iframe>
+</div>
 </body></html>
