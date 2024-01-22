@@ -271,7 +271,7 @@ function toggleMusic() {
     let bufferLength = analyser.frequencyBinCount;
     dataArray = new Uint8Array(bufferLength);
     analyser.connect(audioCtx.destination);
-    source = audioCtx.createMediaElementSource(new Audio("./machine.mp3"));
+    source = audioCtx.createMediaElementSource(new Audio("./theme.mp3"));
     source.connect(analyser);
     source.mediaElement.play();
     renderFrame();
