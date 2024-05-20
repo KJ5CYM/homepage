@@ -133,30 +133,20 @@
 <td align="center" colspan="2">
 <h1>Welcome to my radio shack website!</h1>
 <script>
-var months = [ "January", "February", "March", ... ];
-var days   = [ "Sunday", "Monday", "Tuesday" ... ];
 
-function updateClock( elementId ) {
+// Anytime Anywhere Web Page Clock Generator
+// Clock Script Generated at
+// http://www.rainbow.arch.scriptmania.com/tools/clock
 
-    var dt = new Date();
-
-    var h = dt.getUTCHours().toString();
-    h = h.length == 1 ? '0' + h : h;
-
-    var m = dt.getUTCMinutes().toString();
-    m = m.length == 1 ? '0' + m : m;
-
-    var s = dt.getUTCSeconds().toString();
-    s = s.length == 1 ? '0' + s : s;
-
-    var result = days[ dt.getUTCDaty ] + ' ' + months[ dt.getUTCMonth() ] + ' ' + dt.getUTCFullYear() + ' ' + h + ':' m + ':' + s;
-    document.getElementById( elementId ).textContent = result;
-
-    setTimeout( updateClock.bind( this, elementId ), 100 );
-}
-
-window.addEventListener( 'DOMContentLoaded', function(e) { updateClock('date_time'); } )
+function tS(){ x=new Date(tN().getUTCFullYear(),tN().getUTCMonth(),tN().getUTCDate(),tN().getUTCHours(),tN().getUTCMinutes(),tN().getUTCSeconds()); x.setTime(x.getTime()); return x; } 
+function tN(){ return new Date(); } 
+function lZ(x){ return (x>9)?x:'0'+x; } 
+function dT(){ if(fr==0){ fr=1; document.write('<font size=5 color=#FFFF00><b><span id="tP">'+eval(oT)+'</span></b></font>'); } document.getElementById('tP').innerHTML=eval(oT); setTimeout('dT()',1000); } 
+function y4(x){ return (x<500)?x+1900:x; } 
+var dN=new Array('Sun','Mon','Tue','Wed','Thu','Fri','Sat'),mN=new Array('Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'),fr=0,oT="dN[tS().getDay()]+' '+tS().getDate()+' '+mN[tS().getMonth()]+' '+y4(tS().getYear())+' '+'-'+' '+lZ(tS().getHours())+':'+lZ(tS().getMinutes())+':'+lZ(tS().getSeconds())+' '";
 </script>
+	<font size="5" color="#FFFF00"><b><span id="tP">UTC:</span></b></font>
+	<script language="JavaScript">dT();</script>
 	<tr align = "center">
 	<td class="leftnav"><a href="./qso.html">QSO Logbook</a></td>
 	</tr>
