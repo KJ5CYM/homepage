@@ -133,33 +133,29 @@
 <td align="center" colspan="2">
 <h1>Welcome to my radio shack website!</h1>
 <script>
-function date_time(id) {
-  date = new Date;
-  year = date.getFullYear();
-  month = date.getMonth();
-  months = new Array('January', 'February', 'March', 'April', 'May', 'June', 'Jully', 'August', 'September', 'October', 'November', 'December');
-  d = date.getDate();
-  day = date.getDay();
-  days = new Array('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday');
-  h = date.getHours();
-  if (h < 10) {
-    h = "0" + h;
-  }
-  m = date.getMinutes();
-  if (m < 10) {
-    m = "0" + m;
-  }
-  s = date.getSeconds();
-  if (s < 10) {
-    s = "0" + s;
-  }
-  result = '' + days[day] + ' ' + months[month] + ' ' + d + ' ' + year + ' ' + h + ':' + m + ':' + s;
-  document.getElementById(id).innerHTML = result;
-  setTimeout('date_time("' + id + '");', '1000');
-  return true;
+var months = [ "January", "February", "March", ... ];
+var days   = [ "Sunday", "Monday", "Tuesday" ... ];
+
+function updateClock( elementId ) {
+
+    var dt = new Date();
+
+    var h = dt.getUTCHours().toString();
+    h = h.length == 1 ? '0' + h : h;
+
+    var m = dt.getUTCMinutes().toString();
+    m = m.length == 1 ? '0' + m : m;
+
+    var s = dt.getUTCSeconds().toString();
+    s = s.length == 1 ? '0' + s : s;
+
+    var result = days[ dt.getUTCDaty ] + ' ' + months[ dt.getUTCMonth() ] + ' ' + dt.getUTCFullYear() + ' ' + h + ':' m + ':' + s;
+    document.getElementById( elementId ).textContent = result;
+
+    setTimeout( updateClock.bind( this, elementId ), 100 );
 }
 
-window.onload = date_time('date_time');
+window.addEventListener( 'DOMContentLoaded', function(e) { updateClock('date_time'); } )
 </script>
 	<tr align = "center">
 	<td class="leftnav"><a href="./qso.html">QSO Logbook</a></td>
