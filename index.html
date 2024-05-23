@@ -268,6 +268,17 @@ function lines(){
 setInterval(lines, 100); // Run animation continuously
 
 function toggleMusic() {
+  var iframe = document.querySelector('.overlay iframe');
+
+  // Toggle the visibility of the iframe
+  if (iframe.style.display === "none") {
+    iframe.style.display = "block"; // Make the iframe visible
+  } else {
+    iframe.style.display = "none"; // Hide the iframe
+  }
+
+  // Refresh the iframe
+  iframe.contentWindow.location.reload();
   if (!audioCtx || !audioCtx.state || audioCtx.state === 'closed') {
     audioCtx = new AudioContext();
     analyser = audioCtx.createAnalyser();
@@ -301,17 +312,6 @@ function toggleMusic() {
       document.getElementById("visualizer-container").removeChild(canvas);
     }).catch((err) => console.error(err));
   }
-  var iframe = document.querySelector('.overlay iframe');
-
-  // Toggle the visibility of the iframe
-  if (iframe.style.display === "none") {
-    iframe.style.display = "block"; // Make the iframe visible
-  } else {
-    iframe.style.display = "none"; // Hide the iframe
-  }
-
-  // Refresh the iframe
-  iframe.contentWindow.location.reload();
 }
 function renderFrame() {
   requestAnimationFrame(renderFrame);
