@@ -271,11 +271,14 @@ function toggleMusic() {
   var iframe = document.querySelector('.overlay iframe');
 
   // Toggle the visibility of the iframe
-  if (iframe.style.display == "none") {
+  if (iframe.style.display === "none") {
     iframe.style.display = "block"; // Make the iframe visible
+
+    // Refresh the iframe
+    iframe.contentWindow.location.reload();
+  } else {
+    iframe.style.display = "none"; // Hide the iframe
   }
-  // Refresh the iframe
-  iframe.contentWindow.location.reload();
   if (!audioCtx || !audioCtx.state || audioCtx.state === 'closed') {
     audioCtx = new AudioContext();
     analyser = audioCtx.createAnalyser();
