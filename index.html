@@ -93,7 +93,23 @@ background: linear-gradient(#0f0,transparent);
   left: 10px;
   z-index: 100;
 }
-
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            pointer-events: none;
+            background: rgba(0, 0, 0, 0.10);
+        }
+        .overlay iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            pointer-events: auto;
+            background: transparent; /* This makes the iframe completely transparent */
+        }
 #visualizer-container {
   position: fixed;
   bottom: 0; /* Pin to the bottom of the screen */
@@ -173,6 +189,8 @@ iframe {
  <div id="index-container">
   <div id="visualizer-container"><canvas id="canvas"></canvas></div>
 <script type="text/javascript" async="" src="./r0b0_files/js"></script></head>
+    <div class="overlay">
+        <iframe src="force.html"></iframe></div>
 <body bgcolor="#000000" text="#00FF41" link="#44FF44" vlink="#44FF44" alink="#FFFFFF">
   
 <div class="c">
