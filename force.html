@@ -307,24 +307,31 @@ $(document).ready(function() {
 
     animate();
 
-    // Set the initial animation
-    $triforce.css('animation', 'rotate linear infinite 5s');
+    // Trigger all animations at once for 5 seconds at the beginning
+    $triforce.css('animation', 'rotate linear infinite 5s, bounceFlip linear infinite 5s, wobble linear infinite 5s');
+    $triangles.css('animation', 'bounceFlip linear infinite 5s');
 
-    // Change the animation every 10 seconds
-    setInterval(function() {
-        $triforce.css('animation', 'bounceFlip linear infinite 10s');
-        $triangles.css('animation', 'rotate linear infinite 5s'); // Add rotate animation to each triangle
+    // After 5 seconds, launch into the normal routine
+    setTimeout(function() {
+        // Set the initial animation
+        $triforce.css('animation', 'bounceFlip linear infinite 5s');
 
-        // Stop the bounceFlip animation after 3 seconds
-        setTimeout(function() {
-            $triforce.css('animation', '');
-        }, 3000);
+        // Change the animation every 10 seconds
+        setInterval(function() {
+    $triforce.css('animation', 'bounceFlip linear infinite 5s, wobble linear infinite 5s');
+            $triangles.css('animation', 'rotate linear infinite 3s'); // Add rotate animation to each triangle
 
-        // Return to the original animation after 5 seconds
-        setTimeout(function() {
-            $triforce.css('animation', 'rotate linear infinite 5s');
-        }, 5000);
-    }, 10000);
+            // Stop the bounceFlip animation after 3 seconds
+            setTimeout(function() {
+                $triforce.css('animation', '');
+            }, 3000);
+
+            // Return to the original animation after 5 seconds
+            setTimeout(function() {
+                $triforce.css('animation', 'bounceFlip linear infinite 5s');
+            }, 5000);
+        }, 10000);
+    }, 5000);
 });
 
     </script>
