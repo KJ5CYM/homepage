@@ -109,6 +109,7 @@ background: linear-gradient(#0f0,transparent);
             border: none;
             pointer-events: auto;
             background: transparent; /* This makes the iframe completely transparent */
+	    display: none; /* This will make the iframe initially invisible */
         }
 #visualizer-container {
   position: fixed;
@@ -300,6 +301,17 @@ function toggleMusic() {
       document.getElementById("visualizer-container").removeChild(canvas);
     }).catch((err) => console.error(err));
   }
+  var iframe = document.querySelector('.overlay iframe');
+
+  // Toggle the visibility of the iframe
+  if (iframe.style.display === "none") {
+    iframe.style.display = "block"; // Make the iframe visible
+  } else {
+    iframe.style.display = "none"; // Hide the iframe
+  }
+
+  // Refresh the iframe
+  iframe.contentWindow.location.reload();
 }
 function renderFrame() {
   requestAnimationFrame(renderFrame);
