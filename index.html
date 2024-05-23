@@ -271,9 +271,7 @@ function toggleMusic() {
   var iframe = document.querySelector('.overlay iframe');
 
   // Toggle the visibility of the iframe
-  if (iframe.style.display === "none") {
-    iframe.style.display = "block"; // Make the iframe visible
-  }
+  iframe.style.display = "block"; // Make the iframe visible
   if (!audioCtx || !audioCtx.state || audioCtx.state === 'closed') {
     audioCtx = new AudioContext();
     analyser = audioCtx.createAnalyser();
