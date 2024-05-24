@@ -191,6 +191,7 @@ iframe {
   <div id="visualizer-container"><canvas id="canvas"></canvas></div>
 <script type="text/javascript" async="" src="./r0b0_files/js"></script></head>
     <div class="overlay">
+        <iframe src="force.html"></iframe></div>
 <body bgcolor="#000000" text="#00FF41" link="#44FF44" vlink="#44FF44" alink="#FFFFFF">
   
 <div class="c">
@@ -267,6 +268,10 @@ function lines(){
 setInterval(lines, 100); // Run animation continuously
 
 function toggleMusic() {
+  var iframe = document.querySelector('.overlay iframe');
+
+  // Toggle the visibility of the iframe
+  iframe.style.display = "block"; // Make the iframe visible
   if (!audioCtx || !audioCtx.state || audioCtx.state === 'closed') {
     audioCtx = new AudioContext();
     analyser = audioCtx.createAnalyser();
