@@ -268,10 +268,6 @@ function lines(){
 setInterval(lines, 100); // Run animation continuously
 
 function toggleMusic() {
-  var iframe = document.querySelector('.overlay iframe');
-
-  // Toggle the visibility of the iframe
-  iframe.style.display = "block"; // Make the iframe visible
   if (!audioCtx || !audioCtx.state || audioCtx.state === 'closed') {
     audioCtx = new AudioContext();
     analyser = audioCtx.createAnalyser();
